@@ -1,0 +1,11 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "device/lge/g4-common",
+        "hardware/qcom-caf/msm8992",
+        "vendor/lge/g4-common",
+    ],
+}
