@@ -196,8 +196,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/bin/energy-awareness',
         'vendor/lib/liblbs_core.so',
         'vendor/lib64/liblbs_core.so',
-        'vendor/lib/libcneapiclient.so',
-        'vendor/lib64/libcneapiclient.so',
         'vendor/lib/lib-rtpdaemoninterface.so',
         'vendor/lib64/lib-rtpdaemoninterface.so',
         'vendor/lib/libCB.so',

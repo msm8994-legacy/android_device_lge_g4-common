@@ -106,6 +106,11 @@ TARGET_USES_ION := true
 TARGET_SCREEN_DENSITY := 560
 
 # Filesystem
+BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1957691392
+BOARD_SYSTEM_EXTIMAGE_EXTFS_INODE_COUNT := -1
+BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
+BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 94371840
+BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 94371840
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 BOARD_CACHEIMAGE_PARTITION_SIZE := 1291845632
@@ -202,7 +207,7 @@ $(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(COMMON_PATH)/include)
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/charging_enabled)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,1)
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,0)
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
 # NFC
 BOARD_NFC_CHIPSET := pn547
@@ -225,6 +230,8 @@ TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
 TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # QCOM
@@ -233,6 +240,9 @@ BOARD_USES_QC_TIME_SERVICES := true
 
 #Recovery 
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # RIL
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \

@@ -297,7 +297,7 @@ vendor/lib/libchromatix_t4ka3_snapshot_open.so
 vendor/lib/libchromatix_t4ka3_vt.so
 vendor/lib/libchromatix_t4ka3_vt_open.so
 vendor/lib/libcne.so
-vendor/lib/libcneapiclient.so
+vendor/lib/libcneapiclient.so;DISABLE_CHECKELF
 vendor/lib/libcneqmiutils.so
 vendor/lib/libconfigdb.so
 vendor/lib/libconnctrl.so
@@ -612,7 +612,7 @@ vendor/lib64/libbtnv.so
 vendor/lib64/libc2d30-a3xx.so
 vendor/lib64/libc2d30-a4xx.so
 vendor/lib64/libcne.so
-vendor/lib64/libcneapiclient.so
+vendor/lib64/libcneapiclient.so;DISABLE_CHECKELF
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libconnctrl.so
