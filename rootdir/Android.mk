@@ -52,6 +52,7 @@ LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := EXECUTABLES
 LOCAL_SRC_FILES	    := bin/wrild.sh
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
+LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -59,6 +60,7 @@ LOCAL_MODULE        := kill_pulse.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := EXECUTABLES
 LOCAL_SRC_FILES     := bin/kill_pulse.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -67,6 +69,7 @@ LOCAL_MODULE        := pulse.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := EXECUTABLES
 LOCAL_SRC_FILES     := bin/pulse.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -75,6 +78,7 @@ LOCAL_MODULE        := init.qcom.coex.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES     := bin/init.qcom.coex.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -83,6 +87,7 @@ LOCAL_MODULE        := init.qcom.fm.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES     := bin/init.qcom.fm.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -91,6 +96,7 @@ LOCAL_MODULE        := init.qcom.post_boot.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES     := bin/init.qcom.post_boot.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -99,6 +105,7 @@ LOCAL_MODULE        := init.qcom.uicc.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES     := bin/init.qcom.uicc.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -107,6 +114,7 @@ LOCAL_MODULE	    := init.class_main.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES	    := bin/init.class_main.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -115,6 +123,7 @@ LOCAL_MODULE	    := init.msm8992.sensor.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES	    := bin/init.msm8992.sensor.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -123,6 +132,7 @@ LOCAL_MODULE        := init.baseband.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES     := bin/init.baseband.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -131,6 +141,7 @@ LOCAL_MODULE        := init.qcom.usb.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES     := bin/init.qcom.usb.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -139,6 +150,7 @@ LOCAL_MODULE        := init.qcom.qseecomd.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES     := bin/init.qcom.qseecomd.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -147,6 +159,7 @@ LOCAL_MODULE        := init.qcom.bt.sh
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
 LOCAL_SRC_FILES     := bin/init.qcom.bt.sh
+LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH   := $(TARGET_OUT_VENDOR_EXECUTABLES)
 include $(BUILD_PREBUILT)
 
@@ -156,6 +169,7 @@ LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SRC_FILES    := bin/set_tasks.sh
 LOCAL_VENDOR_MODULE    := true
+LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -164,4 +178,5 @@ LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SRC_FILES    := bin/mountacdb.sh
 LOCAL_VENDOR_MODULE    := true
+LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PREBUILT)
