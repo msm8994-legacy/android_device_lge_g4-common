@@ -38,7 +38,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib/libAlAisLib.so',
         'vendor/lib/libcir_driver.so',
         'vendor/lib64/libcir_driver.so',
-        'vendor/lib/libtar.so',
+        'vendor/lib/libtar-lge.so',
         'vendor/lib/libAlAisTune.so',
         'vendor/lib/libmorpho_image_stab31.so',
         'vendor/lib/libHDR.so',
@@ -53,7 +53,6 @@ blob_fixups: blob_fixups_user_type = {
 	    'vendor/lib64/libUserAgent.so',
 	    'vendor/lib/libAlAisWrap.so',
         'vendor/lib/libuiblur.so',
-	    'vendor/bin/RIDLClient.exe',
         'vendor/lib/libmmcamera2_is.so',
         'vendor/lib/libalmcascore.so',
         'vendor/lib/libalmcaswrap.so',
@@ -62,6 +61,12 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib/libalhdri.so',
     ): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    (
+        'vendor/bin/RIDLClient.exe',
+    )
+        : blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so')
+        .replace_needed('libtar.so', 'libtar-lge.so'),
     (
         'vendor/lib/libmmcamera_hdr_gb_lib.so',
     )

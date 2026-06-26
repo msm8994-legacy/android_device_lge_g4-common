@@ -522,7 +522,7 @@ vendor/lib/libsurround_3mic_proc.so;DISABLE_CHECKELF
 vendor/lib/libsymphony-1.1.2.so
 vendor/lib/libsymphonypower-1.1.2.so
 vendor/lib/libsystem_health_mon.so
-vendor/lib/libtar.so
+vendor/lib/libtar.so:vendor/lib/libtar-lge.so;FIX_SONAME
 vendor/lib/libtzdrmgenprov.so
 vendor/lib/libuiblur.so;DISABLE_CHECKELF
 vendor/lib/libulp2.so
