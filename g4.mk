@@ -106,8 +106,8 @@ PRODUCT_PACKAGES += \
     Aperture
 
 # Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
+#PRODUCT_PACKAGES += \
+#    disable_configstore
 
 # ConsumerIR
 PRODUCT_PACKAGES += \
@@ -137,7 +137,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
-    android.hardware.memtrack@1.0-impl \
     copybit.msm8992 \
     gralloc.msm8992 \
     hwcomposer.msm8992 \
