@@ -30,6 +30,7 @@ import /vendor/etc/init/hw/init.qcom.power.rc
 import /init.device.rc
 
 on early-init
+    mount cgroup cpuset /dev/cpuset cpuset
     # Magisk needs the /sbin folder to be defined in the PATH
     export PATH /sbin:/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin
 
