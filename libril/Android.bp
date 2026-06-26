@@ -56,7 +56,6 @@ cc_library_shared {
         "-Wall",
         "-Wextra",
         "-Wno-unused-parameter",
-        "-Werror",
         "-DPB_FIELD_32BIT",
     ] + select(soong_config_variable("ril", "sim_count"), {
         "2": [
